@@ -44,7 +44,7 @@
     "bugs": {
         "url": "https://github.com/supuwoerc/rollup-ts-basic-template/issues"
     },
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@babel/core": "^7.21.8",
         "@commitlint/cli": "^17.6.3",
