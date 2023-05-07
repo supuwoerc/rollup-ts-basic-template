@@ -31,8 +31,19 @@
         "dist",
         "*.d.ts"
     ],
-    "keywords": [],
-    "author": "https://github.com/supuwoerc",
+    "keywords": [
+        "typescript",
+        "javascript"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/supuwoerc/rollup-ts-basic-template.git"
+    },
+    "author": "QiMeng Zhang <zhangzhouou@gmail.com>(https://github.com/supuwoerc)",
+    "homepage": "https://github.com/supuwoerc/rollup-ts-basic-template",
+    "bugs": {
+        "url": "https://github.com/supuwoerc/rollup-ts-basic-template/issues"
+    },
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.21.8",
