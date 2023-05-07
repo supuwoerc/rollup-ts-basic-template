@@ -5,7 +5,6 @@
 })(this, (function () { 'use strict';
 
     function test() {
-      console.log("test function");
     }
 
     return test;

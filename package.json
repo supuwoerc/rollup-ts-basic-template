@@ -5,24 +5,25 @@
     "main": "dist/index.js",
     "module": "dist/index.js",
     "types": "index.d.ts",
+    "type": "module",
     "scripts": {
         "prepare": "husky install",
-        "build": "rollup -c && npm run build:types",
+        "build": "rollup -c && npm run build:types && npm run doc",
         "build:types": "npx tsc",
         "dev": "rollup -c --watch",
         "doc": "typedoc --options typedoc.json",
-        "lint": "eslint --ext .js,.ts src",
-        "lint:fix": "eslint 'src/**/*.{js,ts}' --fix",
+        "lint": "eslint --ext .ts src --config=.eslintrc.json",
+        "lint:fix": "eslint --ext .ts src --fix --config=.eslintrc.json",
         "lint-staged": "lint-staged",
-        "commitlint": "commitlint --config commitlint.config.js -e -V"
+        "commitlint": "commitlint --config commitlint.config.cjs -e -V"
     },
     "lint-staged": {
         "src/**/*.{ts,js}": "npm run lint"
     },
     "exports": {
         ".": {
-            "import": "./dist/index.mjs",
-            "require": "./dist/index.cjs",
+            "import": "./dist/index.esm.js",
+            "require": "./dist/index.common.js",
             "types": "./index.d.ts"
         }
     },
