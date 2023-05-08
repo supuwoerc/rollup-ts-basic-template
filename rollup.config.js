@@ -19,7 +19,14 @@ const plugins = [
     resolve({
         preferBuiltins: true,
     }),
-    alias(),
+    alias({
+        entries: [
+            {
+                find: '@',
+                replacement: new URL('./src', import.meta.url).pathname,
+            },
+        ],
+    }),
     json(),
     typescript(),
     commonjs(),
