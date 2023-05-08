@@ -4,9 +4,10 @@
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, (global.template = global.template || {}, global.template.min = global.template.min || {}, global.template.min.js = factory()));
 })(this, (function () { 'use strict';
 
-    function test() {
+    function addNumber(a, b) {
+      return a + b;
     }
 
-    return test;
+    return addNumber;
 
 }));

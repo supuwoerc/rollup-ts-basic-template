@@ -1,6 +1,7 @@
 'use strict';
 
-function test() {
+function addNumber(a, b) {
+  return a + b;
 }
 
-module.exports = test;
+module.exports = addNumber;

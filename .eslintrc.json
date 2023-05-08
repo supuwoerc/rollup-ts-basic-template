@@ -12,6 +12,12 @@
     },
     "settings": {
         "import/resolver": {
+            "eslint-import-resolver-custom-alias": {
+                "alias": {
+                    "@": "./src"
+                },
+                "extensions": [".js", ".ts"] //https://github.com/johvin/eslint-import-resolver-alias/issues/16
+            },
             "node": {
                 "extensions": [".js", ".ts"],
                 "moduleDirectory": ["node_modules", "./src"]

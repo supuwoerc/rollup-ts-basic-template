@@ -1,4 +1,5 @@
-function test() {
+function addNumber(a, b) {
+  return a + b;
 }
 
-export { test as default };
+export { addNumber as default };

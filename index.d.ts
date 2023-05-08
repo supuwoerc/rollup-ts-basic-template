@@ -1,3 +1,3 @@
-declare function test(): void;
+declare function addNumber(a: number, b: number): number;
 
-export { test as default };
+export { addNumber as default };

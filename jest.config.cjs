@@ -1,8 +1,8 @@
 // https://kulshekhar.github.io/ts-jest/docs/getting-started/paths-mapping/
-https: module.exports = {
+module.exports = {
     preset: 'ts-jest',
     clearMocks: true,
-    collectCoverage: true,
+    collectCoverage: false,
     coverageDirectory: 'coverage',
     coverageProvider: 'v8',
     testEnvironment: 'jsdom',
