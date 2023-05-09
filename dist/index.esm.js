@@ -1,5 +1,1 @@
-function addNumber(a, b) {
-  return a + b;
-}
-
-export { addNumber as default };
+function t(t,e){return t+e}export{t as default};

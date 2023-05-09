@@ -1,7 +1,1 @@
-'use strict';
-
-function addNumber(a, b) {
-  return a + b;
-}
-
-module.exports = addNumber;
+"use strict";module.exports=function(t,e){return t+e};

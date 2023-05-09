@@ -1,13 +1,1 @@
-(function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-    typeof define === 'function' && define.amd ? define(factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, (global.template = global.template || {}, global.template.min = global.template.min || {}, global.template.min.js = factory()));
-})(this, (function () { 'use strict';
-
-    function addNumber(a, b) {
-      return a + b;
-    }
-
-    return addNumber;
-
-}));
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):((e="undefined"!=typeof globalThis?globalThis:e||self).template=e.template||{},e.template.min=e.template.min||{},e.template.min.js=t())}(this,(function(){"use strict";return function(e,t){return e+t}}));
