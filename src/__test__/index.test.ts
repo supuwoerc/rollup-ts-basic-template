@@ -1,4 +1,4 @@
-import addNumber from '@/index'
+import { addNumber } from '@/index'
 
 describe('demo test', () => {
     test('add two number', () => {

@@ -6,4 +6,4 @@ declare const TEMPLATE_INFO = "\u4F7F\u7528GithubActions&TypeDoc\u90E8\u7F72\u65
  */
 declare function addNumber(a: number, b: number): number;
 
-export { TEMPLATE_INFO, addNumber as default };
+export { TEMPLATE_INFO, addNumber };

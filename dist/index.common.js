@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});exports.TEMPLATE_INFO="使用GithubActions&TypeDoc部署文档",exports.default=function(e,t){return e+t};
+"use strict";exports.TEMPLATE_INFO="使用GithubActions&TypeDoc部署文档",exports.addNumber=function(t,e){return t+e};
