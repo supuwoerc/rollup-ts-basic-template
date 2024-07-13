@@ -7,7 +7,7 @@ import esbuild from 'rollup-plugin-esbuild'
 import typescript from 'rollup-plugin-typescript2'
 import babel from '@rollup/plugin-babel'
 import eslint from '@rollup/plugin-eslint'
-import { terser } from 'rollup-plugin-terser'
+import terser from '@rollup/plugin-terser'
 import cleaner from 'rollup-plugin-cleaner'
 import replace from '@rollup/plugin-replace'
 import path from 'path'
@@ -57,7 +57,7 @@ export default [
             {
                 file: input.replace('src/', 'dist/').replace('.ts', '.umd.js'),
                 format: 'umd',
-                name: 'template.min.js',
+                name: 'pluginName',
             },
             {
                 file: input.replace('src/', 'dist/').replace('.ts', '.esm.js'),
