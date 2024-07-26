@@ -1,6 +1,6 @@
 {
     "name": "rollup-ts-basic-template",
-    "version": "1.0.0",
+    "version": "0.0.0",
     "description": "rollup-ts-basic-template",
     "main": "dist/index.js",
     "module": "dist/index.js",
@@ -19,7 +19,8 @@
         "lint": "eslint --ext .ts src --config=.eslintrc.json",
         "lint:fix": "eslint --ext .ts src --fix --config=.eslintrc.json",
         "lint-staged": "lint-staged",
-        "commitlint": "commitlint --config commitlint.config.cjs -e -V"
+        "commitlint": "commitlint --config commitlint.config.cjs -e -V",
+        "release": "release-it"
     },
     "lint-staged": {
         "src/**/*.{ts}": "npm run lint"
@@ -54,6 +55,7 @@
         "@babel/core": "^7.21.8",
         "@commitlint/cli": "^17.6.3",
         "@commitlint/config-conventional": "^17.6.3",
+        "@release-it/conventional-changelog": "^8.0.1",
         "@rollup/plugin-alias": "^5.0.0",
         "@rollup/plugin-babel": "^6.0.3",
         "@rollup/plugin-commonjs": "^24.1.0",
@@ -80,6 +82,7 @@
         "jest-environment-jsdom": "^29.5.0",
         "lint-staged": "^13.2.2",
         "prettier": "^2.8.8",
+        "release-it": "^17.6.0",
         "rollup": "^3.21.5",
         "rollup-plugin-cleaner": "^1.0.0",
         "rollup-plugin-cleanup": "^3.2.1",
