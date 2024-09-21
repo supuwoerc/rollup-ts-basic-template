@@ -18,6 +18,7 @@ const entries = ['src/index.ts']
 const envConfig = config({ path: `./.env.${process.env.NODE_ENV}` }).parsed
 
 const plugins = [
+    commonjs(),
     eslint(),
     babel({
         babelrc: false,
@@ -39,7 +40,6 @@ const plugins = [
     typescript({
         clean: true, // https://github.com/ezolenko/rollup-plugin-typescript2/issues/443
     }),
-    commonjs(),
     esbuild(),
     replace({
         preventAssignment: true,
